@@ -87,7 +87,7 @@ function wpa_add_honeypot_field(){
 	    var $form = jQuery(this).closest('form'); // Get the parent form of input.wpa_initiator
 	    
 	    // Check if wpa_hidden_field exists in the form, if not, insert it after input.wpa_initiator
-	    if ($form.find(wpa_hidden_field).length === 0) {
+	    if ($form.find('.wpa_hidden_field').length === 0) {
 	        jQuery(wpa_hidden_field).insertAfter(this);
 	    }
 	});
