@@ -8,7 +8,7 @@ function wpa_load_scripts(){
         wp_enqueue_script( 'wpascript', plugins_url( '/js/wpa.js', __FILE__ ), array('jquery'), $GLOBALS['wpa_version'], true );
     }
 
-    wp_add_inline_script( 'wpascript', 'wpa_field_info = '.json_encode(wpa_field_info()));
+    wp_add_inline_script( 'wpascript', 'wpa_field_info = JSON.parse(atob("'.base64_encode(json_encode(wpa_field_info())).'"));');
     wp_enqueue_style( 'wpa-css', plugins_url( '/css/wpa.css', __FILE__ ), array(), $GLOBALS['wpa_version']);
 }
 
