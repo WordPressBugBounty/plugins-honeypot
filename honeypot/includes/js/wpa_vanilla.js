@@ -7,39 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     wpa_hidden_field            = "<div id='altEmail_container' class='altEmail_container'><label for='alt_s'>Alternative:</label><input type='text' id='alt_s' name='alt_s' ></div><span class='wpa_hidden_field' style='display:none;height:0;width:0;'><label>WPA <input type='text' name='"+wpa_field_name+"' value='"+wpa_unique_id+"' /></label></span>";
 
-    var wpa_injected = false;
-    function inject_wpa() {
-        if (wpa_injected) return;
-        wpa_injected = true;
+    wpa_add_honeypot_field();
 
-        wpa_add_honeypot_field();
-
-        if (typeof wpae_add_honeypot_field === 'function') { // IF EXTENDED version exists.
-            wpae_add_honeypot_field();
-        }
-
-        if (wpa_add_test === 'yes') {
-            wpa_add_test_block();
-        }
-
-        const events = ['mousemove', 'keydown', 'scroll', 'touchstart', 'focusin', 'mousedown', 'click'];
-        events.forEach(event => {
-            document.removeEventListener(event, trigger_wpa_injection);
-        });
+    if (typeof wpae_add_honeypot_field === 'function') { // IF EXTENDED version exists.
+        wpae_add_honeypot_field();
     }
 
-    function trigger_wpa_injection() {
-        inject_wpa();
+    if (wpa_add_test === 'yes') {
+        wpa_add_test_block();
     }
-
-    // Trigger on user interaction
-    const events = ['mousemove', 'keydown', 'scroll', 'touchstart', 'focusin', 'mousedown', 'click'];
-    events.forEach(event => {
-        document.addEventListener(event, trigger_wpa_injection);
-    });
-
-    // Fallback: inject after 2 seconds delay
-    setTimeout(inject_wpa, 2000);
 });
 
 function wpa_act_as_spam() {
