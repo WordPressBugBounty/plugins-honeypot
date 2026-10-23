@@ -3,7 +3,7 @@ Contributors: dnesscarkey
 Donate link: https://www.patreon.com/wp_armour
 Tags: anti spam, spam protection, comment spam , contact form spam, akismet
 Requires at least: 5.0
-Tested up to: 7.0
+Tested up to: 7.1
 Stable tag: 2.4.02
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
