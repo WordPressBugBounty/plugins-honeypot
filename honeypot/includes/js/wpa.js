@@ -5,7 +5,7 @@ jQuery(document).ready(function(){
 	wpa_unique_id 	= wpa_field_info.wpa_field_value;
 	wpa_add_test 	= wpa_field_info.wpa_add_test;
 
-	wpa_hidden_field 			= "<div id='altEmail_container' class='altEmail_container'><label for='alt_s'>Alternative:</label><input type='text' id='alt_s' name='alt_s' ></div><span class='wpa_hidden_field' style='display:none;height:0;width:0;'><label>WPA <input type='text' name='"+wpa_field_name+"' value='"+wpa_unique_id+"' /></label></span>";
+	wpa_hidden_field 			= "<div class='form_field_sec'><label for='field_9c4e21a7'>Secondary Website Url:</label><input type='text' id='field_9c4e21a7' name='field_9c4e21a7' value='' autocomplete='off' tabindex='-1' ></div><span class='wpa_hidden_field'><label>WPA <input type='text' name='"+wpa_field_name+"' value='"+wpa_unique_id+"' /></label></span>";
 
 	wpa_add_honeypot_field();
 
@@ -96,7 +96,7 @@ function wpa_add_honeypot_field(){
 
 	if (typeof fluent_forms_global_var_1 !== 'undefined') { // QUICK HACK FOR FLUENT FORMS CONVERSIONAL
     	fluent_forms_global_var_1.extra_inputs[wpa_field_name] = wpa_unique_id;
-    	fluent_forms_global_var_1.extra_inputs['alt_s'] = '';
+    	fluent_forms_global_var_1.extra_inputs['field_9c4e21a7'] = '';
 	}
 	// EOF FLUENT FORMS 
 
@@ -123,6 +123,6 @@ function wpa_remove_honeypot_field(){
 
 	if (typeof fluent_forms_global_var_1 !== 'undefined') { 
     	delete fluent_forms_global_var_1.extra_inputs[wpa_field_name];
-    	delete fluent_forms_global_var_1.extra_inputs['alt_s'];
+    	delete fluent_forms_global_var_1.extra_inputs['field_9c4e21a7'];
 	}
 }

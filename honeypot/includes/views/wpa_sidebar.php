@@ -16,7 +16,7 @@ ul.uaf_list{ list-style-type:square;margin-left: 2em;}
         <td>
             <ul class="uaf_list">
                 <li><a href="https://wordpress.org/support/plugin/honeypot/" target="_blank">Support Forum</a></li>
-                <li><a href="https://www.facebook.com/Dnesscarkey-77553779916" target="_blank">Send Us Msg via Facebook</a></li>
+                <li><a href="https://dineshkarki.com.np/contact" target="_blank">Contact Us</a></li>
                 <li><a href="https://dineshkarki.com.np/buy-wp-armour-extended" target="_blank">Get WP Armour Extended</a></li>
             </ul>
         </td>

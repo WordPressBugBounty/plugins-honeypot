@@ -3,8 +3,8 @@ Contributors: dnesscarkey
 Donate link: https://www.patreon.com/wp_armour
 Tags: anti spam, spam protection, comment spam , contact form spam, akismet
 Requires at least: 5.0
-Tested up to: 7.1
-Stable tag: 2.4.02
+Tested up to: 7.1.4
+Stable tag: 2.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,11 +82,6 @@ You can get the WP Armour - Anti Spam Extended from <a title="WP Armour Extended
 
 If you have any issue, you can write to using <a title="WP Armour - Honeypot Anti Spam Forum" href="https://wordpress.org/support/plugin/honeypot/" target="_blank">support forum.</a>
 
-<strong>Need distance-based delivery fees in WooCommerce?</strong>
-
-Calculate accurate shipping costs automatically with <a href="https://hcn.im/routepricing" target="_blank">RoutePricing</a>.
-Uses Google Maps to set dynamic prices per km/mi — perfect for restaurants, local shops, and delivery businesses.
-
 <strong>Support Us at Patreon</strong>
 
 Your support is vital for us to keep fighting spam. By supporting us on <a href="https://www.patreon.com/wp_armour" target="_blank">Patreon</a> with as little as USD 1, you will help us continue developing of our anti spam plugin.
@@ -149,6 +144,11 @@ With WP Armour - Honeypot Anti Spam plugin it is No. But if you want you can use
 1. Screenshot #11. Anti Spam for Fluent Forms
 
 == Changelog ==
+
+= = 2.5 =
+
+* Fixed Wordfence Passkey login (Thanks to Nicolas Moreau)
+* New Spam Detection Check. 
 
 = = 2.4.02 =
 

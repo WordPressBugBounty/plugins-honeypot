@@ -136,8 +136,8 @@ function wpa_unqiue_field_value(){
 function wpa_check_is_spam($form_data){
 	if (
 			(isset($form_data[$GLOBALS['wpa_field_name']])) &&
-			(isset($form_data['alt_s'])) &&
-			(empty($form_data['alt_s']))
+			(isset($form_data['field_9c4e21a7'])) &&
+			(empty(trim($form_data['field_9c4e21a7'])))
 
 		){
 		
